@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="login-body">
+<body>
 
-<div class="login-container">
-  <h2>🔐 Iniciar Sesión</h2>
+<h2>Iniciar Sesión</h2>
 
+<div class="form">
   <input type="email" id="email" placeholder="Correo">
   <input type="password" id="password" placeholder="Contraseña">
-
-  <button id="btnLogin">Ingresar</button>
-  <button id="btnRegister">Registrarse</button>
-
-  <p id="mensaje"></p>
+  <button onclick="login()">Entrar</button>
 </div>
+
+<p>¿No tienes cuenta? <a href="Registro.html">Registrarse</a></p>
 
 <script type="module" src="auth.js"></script>
 </body>
